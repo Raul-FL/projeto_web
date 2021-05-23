@@ -1,0 +1,39 @@
+.windows{
+    display:none;
+    width:300px;
+    height:300px;
+    position:absolute;
+    left:0;
+    top:0;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
+    text-align: center;
+    font-family: Courier, monospace;
+}
+ 
+#mascaraCodificando{
+    display:none;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#009900;
+}
+ 
+#fecharCodificando{display:block; text-align:right;}
+
+
+.texto{
+    
+    font-size:21px;
+    
+    
+}
+.acao{
+    font-size:22px ; 
+    color: #006600;
+    font-weight: bold;
+    
+}

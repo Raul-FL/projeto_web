@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Projeto Web Acessivel</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="css/newEstilos.css" rel="stylesheet" type="text/css">
+        <link href="css/EstiloModalCodificando.css" rel="stylesheet" type="text/css">
+
+
+
+    </head>
+    <body> <div>  
+        <h1 id="titulo" ><a href="#conteudo" style="color: aliceblue; " tabindex="1" > Jogo da Acessibilidade Digital </a></h1>
+       
+        
+        
+        
+        <div id="conteudo">            
+            <div id="resultado" style=" width: 10px; height: 80px ;z-index:2;" ></div>
+        </div>
+        <div class="statusJogador"></div>
+        <div id="inicioDoJogo">
+            <h2 tabindex="1"> Bem-Vindo ao Jogo eMag</h2>
+            <h3  tabindex="2">Escolha um Personagem para começar</h3>
+            <a  href='#' onclick="controlaJogador.informaJogador();"> <img  src="personagens/personagemAzul.png" alt="personagem de cor azul" onkeypress="controlaJogador.informaJogador();" tabindex="3" style=" border-style: solid;border-color: black;margin-top: -1em" ></a>
+            <a  href='#' onclick="controlaJogador.informaJogador();"> <img src="personagens/personagemVerde.png" onkeypress="controlaJogador.informaJogador();" tabindex="4" alt="personagem de cor verde" style=" border-style: solid;border-color: black;margin-top: -1em" ></a>
+        </div>
+        
+        <div id="atalhos"  style="display:none" >
+            <p tabindex="2">Atalhos do jogo.<br/>
+            alt + a para area de comunicação. <br/>
+            alt +j para o dado.
+            </p>
+        <textarea name="" id="areaDeTExto" rows="6" cols="20" readonly="readonly" accesskey="a">
+        </textarea>
+      </div>
+        
+        <div class="iniciar"></div>
+        <div class="camp1"></div>
+        <div class="camp2"></div>
+        <div class="camp3"></div>
+        <div class="camp4"></div>
+        <div class="camp5"></div>
+        <div class="camp6"></div>
+        <div class="camp7"></div>
+        <div class="camp8"></div>
+        <div class="camp9"></div>
+        <div class="camp10"></div>
+        <div class="camp11"></div>
+        <div class="camp12"></div>
+        <div class="camp13"></div>
+        <div class="camp14"></div>
+        <div class="camp15"></div>
+        <div class="camp16"></div>
+        <div class="camp17"></div>
+        <div class="camp18"></div>
+        <div class="camp19"></div>
+        <div class="camp20"></div>
+        <div class="camp21"></div>
+        <div class="camp22"></div>
+        <div class="camp23"></div>
+        <div class="camp24"></div>
+        <div class="camp25"></div>
+        <div class="camp26"></div>
+        <div class="final"></div>
+
+
+        <div class="window" id="janelaCraptcha">
+            <div id="some">
+                <div id="craptcha1" style="display: none" >
+                    <div tabindex="0" id="craArea1" >
+                        <h4>CRAPTCHA</h4>
+                        <p>Qual das tags deve ser usada para titulo da página?</p>   
+                    </div>
+                    <form>
+                        <p id="craptcha1a" > <input type="radio" name="craptcha1" value="craptcha1a" title="href" checked /> href </p>
+                        <p id="craptcha1b"><input type="radio" name="craptcha1" value="craptcha1b" title="h1"/> h1</p>    
+                        <p id="craptcha1c"><input type="radio" name="craptcha1" value="craptcha1c" title="div"/>div</p>  
+                        <p id="craptcha1d"><input type="radio" name="craptcha1" value="craptcha1d"  title="p" />p</p>    
+                    </form>
+                </div> 
+                <div id="craptcha2" style="display: none" >
+                    <div tabindex="0" >
+                        <h4>CRAPTCHA</h4>
+                        <p> Qual elemento HTML é indicado para menus ?</p>       
+                    </div>
+                    <form>
+                        <p id="craptcha2a"> <input type="radio" name="craptcha2" value="craptcha2a" title="menu" checked/> menu </p>
+                        <p id="craptcha2b"><input type="radio" name="craptcha2" value="craptcha2b" title="h2"/> h2 </p>    
+                        <p id="craptcha2c"><input type="radio" name="craptcha2" value="craptcha2c" title="br" /> br </p>  
+                        <p id="craptcha2d"><input type="radio" name="craptcha2" value="craptcha2d" title="form"/> form </p>    
+
+                    </form>
+                </div> 
+
+                <div id="craptcha3" style="display: none">
+                    <div tabindex="0" >
+                        <h4>CRAPTCHA</h4>
+                        <p> Qual tag é usada para descrever imagens ?</p>       
+                    </div>
+                    <form >
+                        <p id="craptcha3a"><input type="radio" name="craptcha3" value="craptcha3a" title="body " checked/> body </p>
+                        <p id="craptcha3b"><input type="radio" name="craptcha3" value="craptcha3b" title="input"/> input </p>    
+                        <p id="craptcha3c"><input type="radio" name="craptcha3" value="craptcha3c" title="img" /> img </p>  
+                        <p id="craptcha3d"><input type="radio" name="craptcha3" value="craptcha3d" title="alt" /> alt </p>    
+                    </form>
+                </div>   
+
+                <div id="craptcha4" style="display: none">
+                    <div tabindex="0" >
+                        <h4>CRAPTCHA</h4>
+                        <p> O e-MAG estabelece três atalhos para:</p>       
+                    </div>
+                    <form >
+                        <p id="craptcha4a"><input type="radio" name="craptcha4" value="craptcha4a" title="Conteúdo, menu principal e pesquisa" checked/> Conteúdo, menu principal e pesquisa </p>
+                        <p id="craptcha4b"><input type="radio" name="craptcha4" value="craptcha4b" title="Rodapé, título e menu."/> Rodapé, título e menu. </p>    
+                        <p id="craptcha4c"><input type="radio" name="craptcha4" value="craptcha4c" title="Conteúdo, home e pesquisa" /> Conteúdo, home e pesquisa </p>  
+                        <p id="craptcha4d"><input type="radio" name="craptcha4" value="craptcha4d" title="Conteúdo, título e botão de sair" /> Conteúdo, título e botão de sair </p>    
+                    </form>
+                </div>   
+
+                <div id="craptcha5" style="display: none">
+                    <div tabindex="0" >
+                        <h4>CRAPTCHA</h4>
+                        <p> Quais outros grupos de pessoas se beneficiam da acessibilidade, além de pessoas com deficiência? ?</p>       
+                    </div>
+                    <form >
+                        <p id="craptcha5a"><input type="radio" name="craptcha5" value="craptcha5a" title="Gestantes e canhotos " checked/> Gestantes e canhotos </p>
+                        <p id="craptcha5b"><input type="radio" name="craptcha5" value="craptcha5b" title="Destros e Universitarios"/> Destros e Universitarios </p>    
+                        <p id="craptcha5c"><input type="radio" name="craptcha5" value="craptcha5c" title=" Idosos, iniciantes e pessoas não alfabetizadas " /> Idosos, iniciantes e pessoas não alfabetizadas </p>  
+                        <p id="craptcha5d"><input type="radio" name="craptcha5" value="craptcha5d" title="Mamíferos e répteis" /> Mamíferos e répteis </p>    
+                    </form>
+                </div>   
+
+                <div id="craptcha6" style="display: none">
+                    <div tabindex="0" >
+                        <h4>CRAPTCHA</h4>
+                        <p> Qual dos atributos auxilia na acessibilidade em tabelas?</p>       
+                    </div>
+                    <form >
+                        <p id="craptcha6a"><input type="radio" name="craptcha6" value="craptcha6a" title="alt  " checked/> alt </p>
+                        <p id="craptcha6b"><input type="radio" name="craptcha6" value="craptcha6b" title="summary"/> summary </p>    
+                        <p id="craptcha6c"><input type="radio" name="craptcha6" value="craptcha6c" title="center" /> center </p>  
+                        <p id="craptcha6d"><input type="radio" name="craptcha6" value="craptcha6d" title="br" /> br </p>    
+                    </form>
+                </div>   
+
+                <div id="craptcha7" style="display: none">
+                    <div tabindex="0" >
+                        <h4>CRAPTCHA</h4>
+                        <p> Para criação de um ambiente acessível para cegos, o site deve preferencialmente </p>       
+                    </div>
+                    <form >
+                        <p id="craptcha7a"><input type="radio" name="craptcha7" value="craptcha7a" title="Possuir linguaguem amigavel " checked/> Possuir linguaguem amigavel </p>
+                        <p id="craptcha7b"><input type="radio" name="craptcha7" value="craptcha7b" title="Estar dentro dos padrões web da W3C"/> Estar dentro dos padrões web da W3C </p>    
+                        <p id="craptcha7c"><input type="radio" name="craptcha7" value="craptcha7c" title=" Ter uma versão do site apenas em texto " /> Ter uma versão do site apenas em texto </p>  
+                        <p id="craptcha7d"><input type="radio" name="craptcha7" value="craptcha7d" title=" Possuir um design esteticamente agradável " />Possuir um design esteticamente agradável </p>    
+                    </form>
+                </div>   
+
+                <div id="craptcha8" style="display: none">
+                    <div tabindex="0" >
+                        <h4>CRAPTCHA</h4>
+                        <p> Porque um texto não deve ser justificado em textos web ? </p>       
+                    </div>
+                    <form >
+                        <p id="craptcha8a"><input type="radio" name="craptcha8" value="craptcha8a" title="Problemático para disléxicos " checked/>  Problemático para disléxicos </p>
+                        <p id="craptcha8b"><input type="radio" name="craptcha8" value="craptcha8b" title=" Não é bom para o design do site"/> Não é bom para o design do site </p>    
+                        <p id="craptcha8c"><input type="radio" name="craptcha8" value="craptcha8c" title=" Causa ataques epiléticos " /> Causa ataques epiléticos </p>  
+                        <p id="craptcha8d"><input type="radio" name="craptcha8" value="craptcha8d" title=" Nenhuma das opções anteriores " /> Nenhuma das opções anteriores </p>    
+                    </form>
+                </div>   
+                <p>
+                    <input class="button2" type="reset" id="botao" value="OK"  />    
+                </p>
+            </div>
+
+            <div style="display:none" id="acerto" tabindex="0">
+                <h2> Acertou!<br> Jogue o Dado </h2>
+            </div>
+
+            <div style="display:none" id="errou" tabindex="0">
+                <h2> Errou! <br>Tente na proxima rodada</h2>
+            </div>
+            <input type="button" id="fechar" class="fechar" value="Fechar" /> 
+
+        </div>
+         <div id="mascara"></div>
+
+        <div class="windows" id="ModalCodificando" rel="modal">
+
+            <div id="codificando1"  tabindex="0">
+                <h2 class="titulo">Codificando</h2>
+                <p class="texto">Você identificou o idioma principal da página.</p>
+                <p class="acao">Jogue Novamente!</p>
+                <input class="button2" type="submit" id="fecharCodificando" value="OK" />  
+            </div>  
+            <div id="codificando2"  tabindex="0">
+                <h2 class="titulo">Codificando</h2>
+                <p class="texto">Forneceu a opção de auto contraste em seu site.</p>
+                <p class="acao">Faça uma pausa para o café!</p>
+                <input class="button2" type="submit" id="fecharCodificando" value="OK" /> 
+            </div> 
+            <div id="codificando3"  tabindex="0">
+                <h2 class="titulo">Codificando</h2>
+                <p class="texto">Permanece até tirar 6 no dado.</p>
+                <p class="acao">Boa Sorte!</p>
+                <input class="button2" type="submit" id="fecharCodificando" value="OK" /> 
+            </div>
+
+        </div>
+        <div id="mascaraCodificando"></div>
+
+        <div class="window" id="janelaFimDeJogo" onclick="jogo.">
+
+            <p class="texto">Jogo terminou.</p>
+            <a href="Tabuleiro.html">a</a>
+             <input type="button" id="botao3"  value="Fechar" class="button2" onclick="jogo.fechaIntrucao()"/> 
+
+
+        </div>
+       
+
+    
+    </body>
+    <script language="JavaScript" type="text/javascript" src="js/JQuery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/EventosJogo/Jogador.js"></script>
+    <script type="text/javascript" src="js/EventosJogo/Dado.js"></script>
+    <script type="text/javascript" src="js/EventosJogo/CasaClass.js"></script>
+    <script type="text/javascript" src="js/EventosJogo/ControlaCasasClass.js"></script>
+    <script type="text/javascript" src="js/EventosJogo/JogoClass.js"></script>
+    <script type="text/javascript" src="js/EventosJogo/ControlaJogadorClass.js"></script>
+    <script type="text/javascript" src="js/EventosJogo/CodificandoClass.js"></script>
+
+
+
+    <script type="text/javascript">
+                var jogador1 = new JogadorClass();
+                var jogador2 = new JogadorClass();
+                jogador1.vez = true;
+                jogador2.vez = false;
+                var casas = new Array();
+                var codificandoArray = new Array();
+                var jogo = new JogoClass();
+                var controlaJogador = new ControlaJogadorClass();
+                var controlaCasas = new ControlaCasasClass();
+                var jogadores = new Array();
+                var numeroCasaJ1 = 0;
+                var numeroCasaJ2 = 0;
+                var casaAtualJ1 = 0;
+                var casaAtualJ2 = 0;
+
+    </script>
+</html>
